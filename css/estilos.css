@@ -5,12 +5,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Monserrat";
 }
-
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
 body {
     height: 100vh;
     /*siempre va a ocupar en el alto el 100% de la pantalla donde se encuentra parado*/
-    background-image: url(../assets/img/cielo.jpg);
+    background-image: url(../assets/img/blanco.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,14 +40,31 @@ body {
 .header {
     height: 100vh;
     /*siempre va a ocupar en el alto el 100% de la pantalla donde se encuentra parado*/
-    background-image: url(../assets/img/cielo.jpg);
+    background-image: url(../assets/img/blanco.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     @media(max-wiidth: 600px)
 }
-
+header .logoHeader img {
+    width: 100px;
+    animation: pulse 4s infinite alternate;
+}
+header .navbar-light .textoLogo {
+    text-shadow: 7px 4px 5px rgba(255, 216, 216, 0.493);
+    font-size: 2.5em;
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+header .navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  header .navbar-light .hoverLink a:focus {
+  color: #2e2a2a !important;
+}
 .contenedorLogo {
     width: 59%;
     display: inline-block;
@@ -71,8 +107,7 @@ body {
     height: 30vh;
     margin: 0 auto;
     /*el primer valor indica para el top y el bottom al mismo tiempo y el segundo indica el left y right*/
-    background-color: rgba(67, 63, 63, 0.242);
-    margin-top: 200px;
+    margin-top: 85px;
     text-align: center;
     backdrop-filter: blur(12px);
     @media(max-wiidth: 600px)
@@ -136,7 +171,96 @@ body {
     @media(max-wiidth: 600px)
 
 }
-
+.contenedorContacto {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .contenedorContacto {
+      padding: 10px;
+    }
+  }
+  
+  .formContacto {
+    margin-bottom: 20px;
+  }
+  .formContacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .formContacto input[type=text],
+  .formContacto input[type=email],
+  .formContacto textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .formContacto textarea {
+    height: 100px;
+  }
+  
+  .botonEnviarContacto {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 28px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .botonEnviarContacto:hover {
+    background-color: #45a049;
+  }
+  
+  .main404 {
+    background-image: url("../assets/img/404.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+  }
+  .main404 .contenedor404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  .main404 h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  .main404 .btn404 {
+    padding: 0.8rem 2rem;
+    background-color: #f3b7b7;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .main404 .btn404:hover {
+    background-color: #cccccc;
+  }
+  @media (max-width: 480px) {
+    .main404 h1 {
+      font-size: 2.5rem;
+    }
+    .main404 .btn404 {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
 .footer {
     height: 30vh;
     text-align: center;
@@ -149,15 +273,33 @@ body {
     @media(max-wiidth: 600px)
 }
 
-.linkRedes {
-    text-decoration: none;
-    padding-left: 20px;
-    background-color: red;
-    @media(max-wiidth: 600px)
-}
-
-.icon {
-    color: black;
-    font-size: 4rem;
-    @media(max-wiidth: 600px)
-}
+footer .siguenos {
+    padding-top: 0.9rem;
+    margin-right: 0.7rem;
+    padding-right: 0.5rem;
+  }
+  footer .iconos {
+    font-size: 40px;
+    color: rgb(2, 30, 46);
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    margin-right: 0.5rem;
+    animation: float infinite 4s ease-in-out;
+  }
+  footer .iconI {
+    animation-delay: 2s;
+  }
+  footer .iconF {
+    animation-delay: 1s;
+  }
+  footer a:hover {
+    color: #2e2a2a !important;
+  }
+  footer a:focus {
+    color: #c9aaa0 !important;
+  }
+  footer .nav-link.footerLinks {
+    size: 1em;
+    color: #030c0d;
+    text-align: center;
+  }
