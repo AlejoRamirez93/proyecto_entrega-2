@@ -69,19 +69,19 @@ header .navbar-light .navbar-toggler {
     width: 59%;
     display: inline-block;
     padding-top: 20px;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .Logo {
     width: 80%;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .navegacion {
     display: inline-block;
     width: 40%;
     text-align: right;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 
 }
 
@@ -90,7 +90,7 @@ header .navbar-light .navbar-toggler {
     display: inline-block;
     padding-left: 10px;
     padding-top: o;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 /*anclas de la navegacion*/
@@ -98,7 +98,7 @@ header .navbar-light .navbar-toggler {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 /*estilados del titulo principal index*/
@@ -107,42 +107,43 @@ header .navbar-light .navbar-toggler {
     height: 30vh;
     margin: 0 auto;
     /*el primer valor indica para el top y el bottom al mismo tiempo y el segundo indica el left y right*/
-    margin-top: 85px;
+    margin-top: 5,3em;
     text-align: center;
     backdrop-filter: blur(12px);
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 
 }
 
 .contenedorTituloheader h1 {
     font-size: 1.4rem;
     padding-top: 10px;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .contenedorTituloheader p {
     font-size: 1.5rem;
     padding-top: 10px;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
+    width: center;
 }
 
 .main {
     height: 100vh;
     margin-bottom: 5vh;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .marginHr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    @media(max-wiidth: 600px)
+    margin-top: 1,25em;
+    margin-bottom: 1,25em;
+    @media(max-wiidth: 38em)
 }
 
 .sectionCards {
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 
 
 }
@@ -150,25 +151,25 @@ header .navbar-light .navbar-toggler {
 .sectionCards h2 {
     font-size: 2rem;
     padding-bottom: 5vh;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .card {
     margin-top: 14vh;
     width: 30%;
     display: inline-block;
-    border-radius: 113px 113px 113px 113px;
-    -webkit-border-radius: 113px 113px 113px 113px;
-    -moz-border-radius: 113px 113px 113px 113px;
-    padding: 10px;
-    @media(max-wiidth: 600px)
+    border-radius: 7em 7em 7em 7em;
+    -webkit-border-radius: 7em 7em 7em 7em;
+    -moz-border-radius: 7em 7em 7em 7em;
+    padding: 0,6em;
+    @media(max-wiidth: 38em)
 }
 
 .card img {
     width: 90%;
     height: 40vh;
     object-fit: cover;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 
 }
 .contenedorContacto {
