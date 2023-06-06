@@ -34,7 +34,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .header {
@@ -45,7 +45,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 header .logoHeader img {
     width: 100px;
@@ -253,7 +253,7 @@ header .navbar-light .navbar-toggler {
   .main404 .btn404:hover {
     background-color: #cccccc;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 30em) {
     .main404 h1 {
       font-size: 2.5rem;
     }
@@ -265,7 +265,7 @@ header .navbar-light .navbar-toggler {
 .footer {
     height: 30vh;
     text-align: center;
-    @media(max-wiidth: 600px)
+    @media(max-wiidth: 38em)
 }
 
 .footer p {
@@ -280,7 +280,7 @@ footer .siguenos {
     padding-right: 0.5rem;
   }
   footer .iconos {
-    font-size: 40px;
+    font-size: 2,5em;
     color: rgb(2, 30, 46);
     padding-right: 0.5rem;
     padding-top: 1rem;
